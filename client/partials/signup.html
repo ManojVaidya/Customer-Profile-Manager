@@ -1,0 +1,28 @@
+<h1>Signup</h1>
+<form method="post" ng-submit="signup()" name="signupForm" style="font-family: -apple-system, BlinkMacSystemFont,Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,Open Sans, Helvetica Neue, sans-serif;
+background:lightgrey;
+border-radius: 4px;
+color:black;
+box-shadow:
+    0 2px 2px rgba(0,0,0,0.2),        
+    0 1px 5px rgba(0,0,0,0.2),        
+    0 0 0 12px rgba(255,255,255,0.4);  width: 400px;
+    margin: 60px auto 30px;
+    padding: 50px;
+    position: relative;">
+  <div class="form-group">
+      <input class="form-control input-lg" type="text" id="username" name="username" ng-model="username" placeholder="Username" required>
+    </div>
+  <div class="form-group">
+    <input class="form-control input-lg" type="email" id="email" name="email" ng-model="email" placeholder="Email" required>
+  </div>
+  <div class="form-group">
+      <input class="form-control input-lg" type="tel" id="phoneno" name="phoneno" ng-model="phoneno" placeholder="Phone number" required>
+  </div>
+  <div class="form-group">
+    <input class="form-control input-lg" type="password" id="password" name="password" ng-model="password" placeholder="Password" required>
+  </div>
+ 
+  <button type="submit" class="btn btn-lg btn-block btn-primary">Register</button>
+</form>
+

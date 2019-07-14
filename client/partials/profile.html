@@ -1,0 +1,32 @@
+<h1 style="text-align:center"><b>Your Profile Details</b></h1>
+
+<h3>Welcome, <em>{{email}}</em>!</h3>
+<hr><br>
+<div ng-if="message">
+  <h3>{{message}}</h3>
+</div>
+
+<div>
+  <h2>Update Email</h2>
+  <form ng-submit="updateUser(newEmail)">
+    <div class="form-group">
+      <input type="email" class="form-control" ng-model="newEmail" placeholder="Enter New Email" required>
+    </div>
+    <button type="submit" class="btn btn-default btn-block">Update</button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+
+
+
+<div>
+    <h2>Update Username </h2>
+    <form ng-submit="updateUser(newusername)">
+      <div class="form-group">
+        <input type="email" class="form-control" ng-model="newusername" placeholder="Enter New Username" required>
+      </div>
+      <button type="submit" class="btn btn-default btn-block">Update</button>
+    </form>
+  </div>
